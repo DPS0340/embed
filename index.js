@@ -31,7 +31,9 @@ function parse() {
 
 button.addEventListener("click", function() {
     const res = parse();
-    changeValue("convertSpan", res);
-    changeInnerHtml("previewDiv", res);
-    show();
+    if (res) {
+        changeValue("convertSpan", res);
+        changeInnerHtml("previewDiv", res);
+        show();
+    }
 });
