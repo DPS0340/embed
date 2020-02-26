@@ -1,0 +1,53 @@
+#inputDiv {
+    display: grid;
+    overflow: hidden;
+    min-height: 200px;
+    border: 2px solid blue;
+}
+
+#inputArea {
+    resize: none;
+    overflow: auto;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    min-height: 200px;
+}
+
+#output {
+    display: none;
+    grid-auto-flow: column;
+    min-height: 200px;
+    border-top: none;
+}
+
+#convert {
+    border-right: none;
+}
+
+#buttonDiv {
+    display: grid;
+    grid-auto-flow: column;
+    height: auto;
+    border: none;
+}
+
+#buttonDiv>div {
+    border: none;
+}
+
+div>div {
+    border: 2px solid blue;
+}
+
+body {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+@media only screen and (max-width: 700px) {
+    .margin {
+        display: none;
+    }
+}
