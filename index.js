@@ -25,7 +25,9 @@ function hide() {
 
 function parse() {
     const val = inputArea.value;
-    const res = val.replace("<iframe", "<embed").replace("</iframe>", "</embed>");
+    const res = val
+        .replace("<iframe", "<embed")
+        .replace("</iframe>", "</embed>");
     return res;
 }
 
