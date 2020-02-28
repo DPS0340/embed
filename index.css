@@ -34,6 +34,8 @@
 
 #convert {
     border-right: none;
+    font-size: 25px;
+    width: 100%;
 }
 
 #convertSpan {
@@ -44,6 +46,7 @@
     height: auto;
     border: none;
     text-align: right;
+    margin-top: 10px;
 }
 
 #buttonDiv>div {
