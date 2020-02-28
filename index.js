@@ -24,7 +24,7 @@ function hide() {
 }
 
 function parse() {
-    const val = inputArea.innerText;
+    const val = inputArea.value;
     if (val.includes("<iframe") && val.includes("</iframe>")) {
         const res = val
             .replace("<iframe", "<embed")

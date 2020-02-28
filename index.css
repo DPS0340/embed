@@ -2,7 +2,29 @@
     resize: none;
     overflow: auto;
     min-height: 200px;
+    width: 100%;
+    font-size: medium;
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    outline: none;
+    margin: 10px;
+}
+
+#inputArea::placeholder {
+    font-size: medium;
+    color: aliceblue;
+}
+
+#inputDiv {
+    min-height: 200px;
     font-size: small;
+    white-space: pre;
 }
 
 #output {
@@ -16,10 +38,9 @@
 
 #output>div {
     display: grid;
-    margin: 10px;
     resize: both;
     overflow: visible;
-    margin: 0;
+    margin: 10px;
 }
 
 #output>div>embed {
@@ -46,12 +67,13 @@
 #main {
     margin-top: 30px;
     min-width: 700px;
+    color: aliceblue;
 }
 
 #photoCopyright {
     text-decoration: underline;
-    color: whitesmoke;
     font-size: 18px;
+    color: azure;
 }
 
 footer {
@@ -66,7 +88,10 @@ body::before {
     right: 0;
     bottom: 0;
     background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    overflow-y: visible;
     z-index: -1;
     content: "";
 }
