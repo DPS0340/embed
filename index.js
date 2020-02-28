@@ -42,5 +42,6 @@ button.addEventListener("click", function() {
         show();
     } else {
         alert('can\'t find iframe tags!');
+        hide();
     }
 });
