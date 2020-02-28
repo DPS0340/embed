@@ -1,9 +1,6 @@
 #inputArea {
     resize: none;
     overflow: auto;
-    border: 0px;
-    outline: 0px;
-    background-color: transparent;
     min-height: 200px;
     font-size: small;
 }
@@ -11,7 +8,6 @@
 #output {
     display: none;
     min-height: 200px;
-    border-top: none;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     overflow: hidden;
@@ -33,7 +29,6 @@
 }
 
 #convert {
-    border-right: none;
     font-size: 25px;
     width: 100%;
 }
@@ -44,19 +39,8 @@
 
 #buttonDiv {
     height: auto;
-    border: none;
     text-align: right;
     margin-top: 10px;
-}
-
-#buttonDiv>div {
-    border: none;
-}
-
-body {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 3fr 1fr;
 }
 
 #main {
@@ -64,21 +48,34 @@ body {
     min-width: 700px;
 }
 
-.margin {
-    display: block;
+#photoCopyright {
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+footer {
+    margin-top: 15%;
+    text-align: center;
+}
+
+body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    z-index: -1;
+    content: "";
 }
 
 @media only screen and (max-width: 700px) {
-    .margin {
-        display: none;
-    }
     #main {
         margin-top: 0px;
         min-width: 100%;
         position: relative;
-    }
-    body {
-        display: block;
     }
     #output {
         grid-auto-flow: row;

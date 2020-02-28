@@ -15,25 +15,35 @@
 </head>
 
 <body>
-    <div class="margin"></div>
-    <div id="main">
-        <h1 style="text-align: left;">
-            iframe to Embed Converter
-        </h1>
-        <div id="inputArea" class="input-group border" placeholder="input here:" contentEditable="true">
-        </div>
-        <div id="output" class="border border-top-0">
-            <div id="convertDiv">
-                <span id="convertSpan"></span>
+    <div class="bg"></div>
+    <div id="ctx" class="container bg-transparent">
+        <div id="main">
+            <h1 style="text-align: left;">
+                iframe to Embed Converter
+            </h1>
+            <div id="inputArea" class="input-group border border-primary" placeholder="input here:" contentEditable="true">
             </div>
-            <div id="previewDiv">
+            <div id="output" class="border border-top-0">
+                <div id="convertDiv">
+                    <span id="convertSpan"></span>
+                </div>
+                <div id="previewDiv">
+                </div>
+            </div>
+            <div id="buttonDiv">
+                <button class="btn btn-primary" id="convert">Convert!</button>
             </div>
         </div>
-        <div id="buttonDiv">
-            <button class="btn btn-primary" id="convert">Convert!</button>
-        </div>
+        <footer class="page-footer">
+            <div class="footer-copyright text-center py-3">
+                <a href="https://unsplash.com/photos/VURwPtZqyF4">
+                    <div id="photoCopyright">
+                        Photo by Ryan Yao on Unsplash
+                    </div>
+                </a>
+            </div>
+        </footer>
     </div>
-    <div class="margin"></div>
 </body>
 
 </html>
