@@ -25,10 +25,13 @@ function hide() {
 
 function parse() {
     const val = inputArea.innerText;
-    const res = val
-        .replace("<iframe", "<embed")
-        .replace("</iframe>", "</embed>");
-    return res;
+    if (val.includes("<iframe") && val.includes("</iframe>")) {
+        const res = val
+            .replace("<iframe", "<embed")
+            .replace("</iframe>", "</embed>");
+        return res;
+    }
+    return null;
 }
 
 button.addEventListener("click", function() {
@@ -37,5 +40,7 @@ button.addEventListener("click", function() {
         changeValue("convertSpan", res);
         changeInnerHtml("previewDiv", res);
         show();
+    } else {
+        alert('can\'t find iframe tags!');
     }
 });
